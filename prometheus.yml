@@ -40,7 +40,7 @@ scrape_configs:
     static_configs:
       - targets:
         # hostname or IP address of target Host
-        - 127.0.0.1
+        - localhost
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
