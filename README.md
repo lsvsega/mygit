@@ -1,10 +1,18 @@
 # mygit
 learning observability
 
-## install wordpress on debian 11
+На виртуальную машину были установлены:
+- WordPress
+- nginx
+- php-fpm
+- mysql
+- prometheus
+- prometheus exporter
+- node exporter
+- nginx exporter
+- php-fpm exporter
+- mysql exporter
+- blackbox exporter
+- alertmanager
 
-## install prometheus and node_exporter on debian 11
-
-## install prometheus-blackbox-exporter on debian 11
-
-## install alertmanager on debian 11
+В prometheus.yml настроен опрос экспортеров раз в 5 секунд
