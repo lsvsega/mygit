@@ -1,0 +1,21 @@
+groups:
+  - name: Critical alers
+    rules:
+      - alert: InstanceDown
+        expr: up == 0
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instance {{ $labels.instance }} downestart=on-failure"
+          description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 5 minute"
+  - name: Warning alers
+    rules:
+      - alert: InstanceDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Instance {{ $labels.instance }} downestart=on-failure"
+          description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute"
