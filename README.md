@@ -16,3 +16,5 @@ learning observability
 - alertmanager
 
 В prometheus.yml настроен опрос экспортеров раз в 5 секунд
+
+Настроена отправка оповещений для warning на email, critical - telegram
