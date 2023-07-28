@@ -18,3 +18,4 @@ learning observability
 В prometheus.yml настроен опрос экспортеров раз в 5 секунд
 
 Настроена отправка оповещений с помощью alertmanager для warning на email, critical в telegram
+Установлена victoriametric, настроен период хранения 1 месяц
